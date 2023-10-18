@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-transform: none;
+}
+
+.home__page{
+    padding-bottom: 96px;
+}
+.header{
+    margin-top: 40px;
+}
+
+.main__content{
+    margin-top: 84px;
+    margin-bottom: 162px;
+}
+
+.title {
+    margin-bottom: 17px;
+}
+
+.main__buttons{
+    margin-top: 37px;
+}

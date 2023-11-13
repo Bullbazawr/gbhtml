@@ -182,17 +182,20 @@ body {
 .mid__item1 {
   width: 360px;
   height: 260px;
-  background: url(/img/mid_img1.svg); }
+  background: url(/img/mid_img1.svg);
+  background-size: cover; }
 
 .mid__item2 {
   width: 360px;
   height: 260px;
-  background: url(/img/mid_img2.svg); }
+  background: url(/img/mid_img2.svg);
+  background-size: cover; }
 
 .mid__item3 {
   width: 360px;
   height: 260px;
-  background: url(/img/mid_img3.svg); }
+  background: url(/img/mid_img3.svg);
+  background-size: cover; }
 
 .mid__item4 {
   position: relative;
@@ -200,6 +203,7 @@ body {
   width: 1140px;
   height: 180px;
   background: url(/img/mid_img4.svg);
+  background-size: cover;
   margin-bottom: 96px; }
 
 .blackout {
@@ -225,20 +229,6 @@ body {
 .product__img {
   width: 100%;
   margin-bottom: 25px; }
-
-.product__image2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 10px 0px;
-  background-color: #F3EDED;
-  margin-bottom: 25px; }
-
-.product__img2 {
-  height: 390px; }
 
 .product__info {
   margin-left: 16px; }
@@ -285,3 +275,59 @@ body {
   width: 212px;
   height: 48px;
   border: #FF6A6A solid 1px; }
+
+@media (max-width: 1139px) {
+  body {
+    padding: 16px; }
+  .header {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .mid__content_wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 19px; }
+  .mid__item {
+    width: 32%; }
+  .product__img2 {
+    height: 327px; }
+  .product__block {
+    width: 30%; } }
+
+@media (max-width: 1023px) {
+  .top__img {
+    margin-left: -10px;
+    margin-right: 10px;
+    max-width: 386px;
+    max-height: 386px; }
+  .title {
+    font-size: 44px; }
+  .of__luxerius {
+    font-size: 24px; }
+  .fashion {
+    font-size: 24px; }
+  .mid__content_wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 19px; }
+  .mid__item1 {
+    width: 231px;
+    height: 167px; }
+  .mid__item2 {
+    width: 231px;
+    height: 167px; }
+  .mid__item3 {
+    width: 231px;
+    height: 167px; }
+  .product__block {
+    width: 45%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 16px 17px 0px; } }

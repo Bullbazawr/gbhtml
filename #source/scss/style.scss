@@ -165,13 +165,51 @@ body {
 .product__block {
     width: 30.7%;
     margin: 0 30px 25px 0;
+    background-color: #F8F8F8;
+    position: relative;
+}
+
+
+
+.cart_hover {
+    background: linear-gradient(to bottom, rgba(58, 56, 56, 0.00) 72%, rgba(248, 248, 248, 0.0) 28%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    padding-top: 188px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cart_hover:hover {
+    background: linear-gradient(to bottom, rgba(58, 56, 56, 0.83) 71%, rgba(248, 248, 248, 0.0) 29%);
+    content-visibility: visible;
+    transition: .2s ease;
+}
+
+.cart__button {
+    width: 139px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #FFFFFF solid 1px;
 }
 
 
 .product__img {
     width: 100%;
     margin-bottom: 25px;
+
 }
+
 
 .product__info {
     margin-left: 16px;
@@ -204,13 +242,14 @@ body {
     margin-bottom: 24px;
 }
 
-.products__footer{
+.products__footer {
     display: flex;
     justify-content: center;
     padding-top: 18px;
     padding-bottom: 60px;
     align-content: center;
 }
+
 .products__button {
     background-color: #fff;
     color: #F16D7F;
@@ -219,20 +258,168 @@ body {
     border: #FF6A6A solid 1px;
 }
 
+
+.footer__top {
+    background-color: #222224;
+    height: 341px;
+    display: flex;
+    padding-top: 103px;
+}
+
+.footer__item_top {
+    width: 360px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.footer__icon {
+    margin-bottom: 28px;
+}
+
+.footer__icon2 {
+    margin-bottom: 20px;
+}
+
+.footer__title {
+    color: #FBFBFB;
+    font-size: 19.96px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.footer__top__text {
+    color: #FBFBFB;
+    font-size: 13.972px;
+    font-weight: 300;
+}
+
+.subscribe__info {
+    background: url(/img/subscribe_info_bg.svg) no-repeat center 70%;
+    height: 448px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 97px;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(244, 244, 244, 0.70);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.footer__quote {
+    text-align: center;
+    width: 360px;
+    z-index: 2;
+}
+
+.quote__text {
+    margin-top: 30px;
+    text-align: center;
+    color: #222224;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.subscribe__menu {
+    padding-top: 53px;
+    z-index: 2;
+}
+
+.subscribe__title {
+    color: #222224;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 167.2%;
+}
+
+.subscribe__text {
+    color: #222224;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 167.2%;
+    margin-bottom: 39px;
+}
+
+.email__input {
+    width: 256px;
+    height: 49px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-left: 22px;
+}
+
+.subscribe__button {
+    width: 100px;
+    height: 49px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #E05C6E;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.social__network {
+    height: 79px;
+    background-color: #222224;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__network_left {
+    padding-top: 30px;
+}
+
+.social__network_right {
+    display: flex;
+    padding-top: 24px;
+}
+
+.social__networks {
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 8px;
+}
+
+
+.brand__rights {
+    color: #FBFBFB;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.social__networks {
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+}
+
+.instagram_icon {
+    background-color: #E05C6E;
+}
+
 //<------MEDIA------->
 //    ----laptop M-----
 @media (max-width: 1139px) {
     body {
         padding: 16px;
     }
-    
+
     .header {
         padding-left: 20px;
         padding-right: 20px;
     }
 
     .mid__content_wraper {
-        display: flex;  
+        display: flex;
         gap: 19px;
     }
 
@@ -241,11 +428,11 @@ body {
     }
 
 
-    .product__img2{
+    .product__img2 {
         height: 327px;
     }
 
-    .product__block{
+    .product__block {
         width: 30%;
     }
 
@@ -256,19 +443,20 @@ body {
 @media (max-width: 1023px) {
 
     .top__img {
-        margin-left: -10px;
+        margin-left: -50px;
         margin-right: 10px;
         max-width: 386px;
         max-height: 386px;
     }
+
     .title {
         font-size: 44px;
     }
-    
+
     .of__luxerius {
         font-size: 24px;
     }
-    
+
     .fashion {
         font-size: 24px;
     }
@@ -279,25 +467,89 @@ body {
         flex-wrap: wrap;
         gap: 19px;
     }
-    
+
     .mid__item1 {
         width: 231px;
         height: 167px;
     }
-    
+
     .mid__item2 {
         width: 231px;
         height: 167px;
     }
-    
+
     .mid__item3 {
         width: 231px;
         height: 167px;
     }
 
     .product__block {
-        width: 45%;
+        width: 47%;
         justify-content: space-between;
-        margin: 0 16px 17px 0px;
+        margin: 0px 22px 0px 0px;
+    }
+}
+
+// <-----MOBIlE----->
+
+@media (max-width: 767px) {
+    .header {
+        width: 100vh;
+    }
+
+    .top__img {
+        display: none;
+    }
+
+    .top__content {
+        width: 100vh;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .mid__content_wraper {
+        display: block;
+    }
+
+    .mid__item {
+        width: 100vh;
+        height: 70vh;
+        background-size: 100vh;
+        margin-bottom: 32px;
+    }
+
+    .mid__item4 {
+        width: 100vh;
+    }
+
+    .product__block {
+        width: 100vh;
+        margin-bottom: 17px;
+    }
+
+    .product__item {
+        display: block;
+        width: 100vh;
+    }
+
+    .product__info {
+        width: 90vh;
+
+    }
+
+    .product__title {
+        font-size: 3.4vh;
+    }
+
+    .product__text {
+        font-size: 3vh;
+    }
+
+    .product__price {
+        font-size: 3vh;
+    }
+
+    .products__footer {
+        width: 90vh;
     }
 }
